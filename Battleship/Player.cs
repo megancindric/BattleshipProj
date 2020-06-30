@@ -41,5 +41,34 @@ namespace Battleship
             //can then receive input on which direction they would like to place (Up, down, left, right)
             //Will check to see if all spots are of type VOID
         }
+       public void PlayerTurn()
+        {
+            UserInterface.DisplayMenuOptions();
+            int userInput = UserInterface.GetUserInputInt("Please enter the number of your selection");
+            switch (userInput)
+            {
+                case 1:
+                    BattleshipAttack();
+                    break;
+
+                case 2:
+                    attackingBoard.DisplayGameboard();
+                    PlayerTurn();
+                    break;
+
+                case 3:
+                    defendingBoard.DisplayGameboard();
+                    PlayerTurn();
+                    break;
+
+                default:
+                    UserInterface.InvalidSelection();
+                    PlayerTurn();
+                    break;
+
+            }
+
+        }
+
     }
 }

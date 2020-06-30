@@ -16,7 +16,16 @@ namespace Battleship
         {
             playerOne = new Player();
             playerTwo = new Player();
+            DisplayGameRules();
+            //While loop (While P1 & P2 (bool haveShips))
+            //Player 1 will select choice
+                //Ultimately will attack
+            //Player 2 will select choice
+                //Ultimately will attack
+            //Will display current standings
 
+            //QUESTIONS FOR DAVID:
+            //How to format ships - could we make them arrays of set length, then overwrite each value?  When each value has been overwritten, sink method
         }
         //method
         public void DisplayGameRules()
@@ -39,19 +48,14 @@ namespace Battleship
             }
         }
 
-        //1. Welcome message & display rules
         //2. Create "player profiles"
             //We'll assign them a name and give them a chance to place their ships
-            //Distroyer: X X
-            //Submarine: X X X 
-            //Battleship X X X X 
-            //Aircraft Carrier X X X X X
+            
             //SHIPS CANNOT OVERLAP (Will need if statement for this)
 
         //Each player can have 2 arrays for gameplay - "Defending" and "Attacking"
             //Same size (20 X 20)
-            //With each turn we can display the "Defending" and "Attacking" arrays 
-                    //Should we use a menu selection for this?
+            
         //Players alternate attacking each other
             //Will provide input as a coordinate (One will be index in first array, second will be index in second array)
                 //We will return a response for a HIT or a MISS
@@ -59,5 +63,7 @@ namespace Battleship
                 //Will also have a response for SINKING A SHIP
                 //Continues until all ships have been sunk
                 //Will then display winner message
+
+       
     }
 }

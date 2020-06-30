@@ -6,6 +6,7 @@ namespace Battleship
 {
     class BattleShipShip : Ship
     {
+        //Can set to B B B B
         public BattleShipShip()
         {
             shipLength = 4;

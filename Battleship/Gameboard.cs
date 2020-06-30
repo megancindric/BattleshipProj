@@ -13,7 +13,6 @@ namespace Battleship
         //constructor
         public Gameboard()
         {
-            //Before setting letters & numbers on rows/columns let's set every value to O
             gameArray = new string[21, 21];
             for (int i = 0; i < gameArray.GetLength(0); i++)
             {

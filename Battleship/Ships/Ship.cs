@@ -11,7 +11,10 @@ namespace Battleship
         {
         }
         //each ship will have length corresponding w/ type of ship
+        public void SinkShip()
+        {
 
+        }
        
     }
 }

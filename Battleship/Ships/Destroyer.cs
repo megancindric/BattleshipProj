@@ -6,6 +6,7 @@ namespace Battleship
 {
     class Destroyer : Ship
     {
+        //Can set to D D
         public Destroyer()
         {
             shipLength = 2;

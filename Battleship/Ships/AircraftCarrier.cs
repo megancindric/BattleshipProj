@@ -7,7 +7,7 @@ namespace Battleship
 {
     class AircraftCarrier : Ship
     {
-        //size of 5
+        //Can set to A A A A A
         //member variables
 
         //ctor
